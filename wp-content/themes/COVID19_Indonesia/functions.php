@@ -36,7 +36,7 @@
 ?>
     <style>
         #login h1 a{
-            background-image: url('<?= DIR?>/MEDIA/content_banner.jpg');
+            background-image: url('<?= DIR?>/MEDIA/editor_logo.jpg');
         }
     </style>
 <?php })?>
