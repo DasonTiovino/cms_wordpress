@@ -9,5 +9,14 @@
     <?php wp_head() ?>
 </head>
 <body>
-    <?php wp_nav_menu(); ?>
+    <div class="navigation">
+        <div>
+            <a href="<?= get_home_url()?>">COVID19 Indonesia</a>
+        </div>
+        <div>
+            <a class="nav-home" href="<?= get_home_url()?>">Home</a>
+            <a class="nav-categories">Our Categories</a>
+            <?php wp_nav_menu(); ?>
+        </div>
+    </div>
     

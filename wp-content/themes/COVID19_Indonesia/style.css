@@ -5,3 +5,75 @@
  * Template: BlankSlate
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --primary-color:#ff4f4f;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+.navigation{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--primary-color);
+    padding: 0 10px;
+}
+.navigation a{
+    color: white;
+    text-decoration: none;
+}
+.nav-categories{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.nav-home{
+    display: flex;
+    align-items: center;
+}
+.menu-main-container{
+    position: absolute;
+    background-color: #ff4f4f;
+}
+.menu-main-container a{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 40px;
+    color: white;
+}
+.navigation > div{
+    display: flex;
+    gap: 1rem;   
+}
+.menu-main-container{
+    top: 50px;
+}
+.menu-main-container:hover,
+.nav-categories:hover ~ div,
+.menu-item-has-children:hover > .sub-menu{
+    display: block;
+}
+.nav-categories ~ div,
+.sub-menu{
+    display: none;
+}
+.navigation li{
+    list-style:none;
+}
+.menu-item-has-children > .sub-menu{
+    position: absolute;
+    width: 100%;
+    left: 10px;
+    background-color: rgb(96, 8, 8) !important;
+}

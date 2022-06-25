@@ -27,4 +27,16 @@
         ];
         register_post_type('events',$event);
     });
+
+    add_action('excerpt_length',function(){
+        return rand(10,15);
+    });
+
+    add_action('login_head',function(){
 ?>
+    <style>
+        #login h1 a{
+            background-image: url('<?= DIR?>/MEDIA/content_banner.jpg');
+        }
+    </style>
+<?php })?>
