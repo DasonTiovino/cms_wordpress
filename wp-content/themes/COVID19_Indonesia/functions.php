@@ -13,7 +13,7 @@
     add_action('init',function(){
         $news = [
             "label"=>"News",
-            "supports"=>['title','editor','thumbnail'],
+            "supports"=>['title', 'editor', 'thumbnail'],
             "public"=>true,
             "taxonomies"=>['category']
         ];
@@ -21,7 +21,7 @@
 
         $event = [
             "label"=>"Events",
-            "supports"=>['title','editor','thumbnail'],
+            "supports"=>['title', 'editor', 'thumbnail'],
             "public"=>true,
             "taxonomies"=>['category']
         ];
